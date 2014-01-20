@@ -1,3 +1,15 @@
+.bigmessage
+{
+background-color:#00CC00; 
+background-size: 100px 300px; 
+margin: 10%; 
+display: block; 
+border-radius:100px; 
+text-align: center; 
+font-size: xx-large; 
+font-family: cursive;
+}
+
 /* START NAV MENU */
 nav {
   background-color:#2C5463;
