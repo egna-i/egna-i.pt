@@ -1,78 +1,165 @@
-.bigmessage
-{
-background-color:#00CC00; 
-background-size: 100px 300px; 
-margin: 10%; 
-display: block; 
-border-radius:100px; 
-text-align: center; 
-font-size: xx-large; 
-font-family: cursive;
+.bigmessage {
+    background-color: #00CC00;
+    background-size: 100px 300px;
+    margin: 10%;
+    display: block;
+    border-radius: 100px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: cursive;
 }
-
 /* START NAV MENU */
+
 nav {
-  background-color:#2C5463;
-  height:40px;
-} 
- 
+    background-color: #2C5463;
+    height: 40px;
+}
 nav ul {
-  font-family: Arial, Verdana;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    font-family: Arial, Verdana;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
- 
 nav ul li {
-  display: block;
-  position: relative;
-  float: left;
+    display: block;
+    position: relative;
+    float: left;
 }
- 
-nav li ul { 
-  display: none; 
+nav li ul {
+    display: none;
 }
- 
 nav ul li a {
-  display: block;
-  text-decoration: none;
-  padding: 7px 15px 3px 15px;
-  background: #2C5463;
-  color: #ffffff;  
-  margin-left: 1px;
-  white-space: nowrap;
-  height:30px; /* Width and height of top-level nav items */
-  width:100px;
-  text-align:center;
+    display: block;
+    text-decoration: none;
+    padding: 7px 15px 3px 15px;
+    background: #2C5463;
+    color: #ffffff;
+    margin-left: 1px;
+    white-space: nowrap;
+    height: 30px;
+    /* Width and height of top-level nav items */
+    width: 100px;
+    text-align: center;
 }
- 
-nav ul li a:hover { 
-  background: #617F8A; 
+nav ul li a:hover {
+    background: #617F8A;
 }
- 
 nav li:hover ul {
-  display: block;
-  position: absolute;
-  height:30px;
+    display: block;
+    position: absolute;
+    height: 30px;
 }
- 
 nav li:hover li {
-  float: none;
-  font-size: 14px;
+    float: none;
+    font-size: 14px;
 }
- 
-nav li:hover a { 
-  background: #3A464F; 
-  height:30px; /* Height of lower-level nav items is shorter than main level */
+nav li:hover a {
+    background: #3A464F;
+    height: 30px;
+    /* Height of lower-level nav items is shorter than main level */
 }
- 
-nav li:hover li a:hover { 
-  background: #95A9B1; 
+nav li:hover li a:hover {
+    background: #95A9B1;
 }
- 
 nav ul li ul li a {
-    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+    text-align: left;
+    /* Top-level items are centered, but nested list items are left-aligned */
 }
- 
 /* END NAV MENU */
+
+/* START COLLAPSE */
+
+.ac-container {
+    width: 400px;
+    margin: 10px auto 30px auto;
+    text-align: left;
+}
+.ac-container label {
+    /*/font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;*/
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    color: #777;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+    line-height: 33px;
+    font-size: 19px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ffffff), color-stop(100%, #eaeaea));
+    background: -webkit-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+    background: -o-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+    background: -ms-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+    background: linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eaeaea', GradientType=0);
+    box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 1px 0px 0px 0px rgba(255, 255, 255, 0.9) inset, 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.ac-container label:hover {
+    background: #fff;
+}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover {
+    background: #c6e1ec;
+    color: #3d7489;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 13px;
+    top: 7px;
+    /*background: transparent url(../images/arrow_down.png) no-repeat center center;*/
+}
+.ac-container input:checked + label:hover:after {
+    /*background-image: url(../images/arrow_up.png);*/
+}
+.ac-container input {
+    display: none;
+}
+.ac-container article {
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.ac-container article p {
+    display: block;
+    font-style: italic;
+    color: #777;
+    line-height: 23px;
+    font-size: 14px;
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+.ac-container input:checked ~ article {
+    -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
+}
+.ac-container input:checked ~ article.ac-small {
+    height: 140px;
+}
+.ac-container input:checked ~ article.ac-medium {
+    height: 180px;
+}
+.ac-container input:checked ~ article.ac-large {
+    height: 230px;
+}
+/* END COLLAPSE */
