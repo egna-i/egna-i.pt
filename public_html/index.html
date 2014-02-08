@@ -1,44 +1,104 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Egna-i</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/vendor/normalize.css" />
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+    <script src="js/default.js" async></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js" async></script>
+    <script src="js/vendor/jquery-2.1.0.min.js" async></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <nav>
+        <ul>
+            <li>
+                <a href="#homepage">Inicio</a>
+            </li>
+            <li>
+                <a href="#servicos">Serviços</a>
+                <ul>
+                    <li>
+                        <a href="#servicos.lavandaria">Lavandaria</a>
+                    </li>
+                    <li>
+                        <a href="#servicos.secagem">Secagem</a>
+                    </li>
+                    <li>
+                        <a href="#servicos.engomadoria">Engomadoria</a>
+                    </li>
+                    <li>
+                        <a href="#servicos.apoioestudo">Apoio ao Estudo</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#contatos">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="ac-container">
+        <section id="homepage">
+        </section>
+        <section id="servicos">
+            <section id="servicos.lavagem">
+                <input id="servicos.lavagem.input" name="servicos.lavagem.input" type="checkbox">
+                <label for="servicos.lavagem.input">Lavagem</label>
+                <article class="ac-large">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </article>
+            </section>
+            <section id="servicos.secagem">
+                <input id="servicos.secagem.input" name="servicos.secagem.input" type="checkbox">
+                <label for="servicos.secagem.input">Secagem</label>
+                <article class="ac-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</article>
+            </section>
+            <section id="servicos.engomadoria">
+                <input id="servicos.engomadoria.input" name="servicos.engomadoria.input" type="checkbox">
+                <label for="servicos.engomadoria.input">Engomadoria</label>
+                <article class="ac-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</article>
+            </section>
+            <section id="servicos.apoioestudo">
+                <input id="servicos.apoioestudo.input" name="servicos.apoioestudo.input" type="checkbox">
+                <label for="servicos.apoioestudo.input">Apoio ao Estudo</label>
+                <article class="ac-large">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </article>
+            </section>
+        </section>
+        <section id="contatos">
+            <input id="contatos.input" name="contatos.input" type="checkbox">
+            <label for="contatos.input">Contatos</label>
+            <article class="ac-large">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <header>
+            <h1>Side by side</h1>
+        </header>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</article>
+    </aside>
+    <footer>
+        <span>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+                </a>
+            </p>
+        </span>
+    </footer>
+</body>
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
-        <script src="js/vendor/jquery-1.10.2.min.js" async defer></script>
-        <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>-->
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!--<script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-			e.async=1;
-			e.defer=1;
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-965911000-351');ga('send','pageview');
-        </script>-->
-    </body>
 </html>
