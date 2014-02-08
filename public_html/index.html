@@ -2,18 +2,30 @@
 <html>
 
 <head>
+    <title>Egna-i</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Egna-i</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/vendor/normalize.css" />
-
-    <script src="js/default.js" async></script>
-    <script src="js/vendor/modernizr-2.6.2.min.js" async></script>
-    <script src="js/vendor/jquery-2.1.0.min.js" async></script>
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/vendor/jquery-2.1.0.min.js"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script defer>
+        function loadgooglemaps() {
+            var googlemaps = document.getElementById('contatos.localizacao.googlemaps');
+            var map_options = {
+              center: new google.maps.LatLng(44.5403, -78.5463),
+              zoom: 8,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(googlemaps, map_options)
+          }
+          //google.maps.event.addDomListener(window, 'load', loadgooglemaps);
+    </script>
 </head>
 
 <body>
@@ -23,19 +35,27 @@
     <nav>
         <ul>
             <li>
-                <a href="#homepage">Inicio</a>
-            </li>
-            <li>
-                <a href="#servicos">Serviços</a>
+                <a href="#egna">Egna-i</a>
                 <ul>
                     <li>
-                        <a href="#servicos.lavandaria">Lavandaria</a>
+                        <a href="#egna.quemsomos">Quem somos</a>
                     </li>
                     <li>
-                        <a href="#servicos.secagem">Secagem</a>
+                        <a href="#egna.missao">Missão</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#selfservice">Serviços Self-Service</a>
+                <ul>
+                    <li>
+                        <a href="#selfservice.lavandaria">Lavandaria</a>
                     </li>
                     <li>
-                        <a href="#servicos.engomadoria">Engomadoria</a>
+                        <a href="#selfservice.secagem">Secagem</a>
+                    </li>
+                    <li>
+                        <a href="#selfservice.engomadoria">Engomadoria</a>
                     </li>
                     <li>
                         <a href="#servicos.apoioestudo">Apoio ao Estudo</a>
@@ -43,29 +63,72 @@
                 </ul>
             </li>
             <li>
+                <a href="#customservice">Serviços Personalizados</a>
+                <ul>
+                    <li>
+                        <a href="#customservice.tratamento">Tratamento de Roupa</a>
+                    </li>
+                    <li>
+                        <a href="#customservice.recolha">Serviço de Recolha</a>
+                    </li>
+                    <li>
+                        <a href="#customservice.apoio">Apoio Escolar</a>
+                    </li>
+                    <li>
+                        <a href="#customservice.atl">Atividades de Tempos Livres</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
                 <a href="#contatos">Contatos</a>
+                <ul>
+                    <li>
+                        <a href="#contatos.horario">Horário</a>
+                    </li>
+                    <li>
+                        <a href="#contatos.localizacao">Localização</a>
+                    </li>
+                    <li>
+                        <a href="#contatos.facebook">Facebook</a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </nav>
     <main class="ac-container">
-        <section id="homepage">
+        <section id="egna">
+            <section id="egna.quemsomos">
+                <input id="egna.quemsomos.input" name="egna.quemsomos.input" type="checkbox">
+                <label for="egna.quemsomos.input">Quem somos</label>
+                <article class="ac-small">
+                    Somos uma família, que procura ajudar outras nas lides domésticas.
+                </article>
+            </section>
+            <section id="egna.missao">
+                <input id="egna.missao.input" name="egna.missao.input" type="checkbox">
+                <label for="egna.missao.input">Missão</label>
+                <article class="ac-small">
+                    Ajudar famílias nas suas lides domésticas, de modo a terem mais tempo de qualidade em família.
+                </article>
+            </section>
         </section>
+
         <section id="servicos">
-            <section id="servicos.lavagem">
-                <input id="servicos.lavagem.input" name="servicos.lavagem.input" type="checkbox">
-                <label for="servicos.lavagem.input">Lavagem</label>
+            <section id="selfservice.lavagem">
+                <input id="selfservice.lavagem.input" name="selfservice.lavagem.input" type="checkbox">
+                <label for="selfservice.lavagem.input">Lavagem</label>
                 <article class="ac-large">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                 </article>
             </section>
-            <section id="servicos.secagem">
-                <input id="servicos.secagem.input" name="servicos.secagem.input" type="checkbox">
-                <label for="servicos.secagem.input">Secagem</label>
+            <section id="selfservice.secagem">
+                <input id="selfservice.secagem.input" name="selfservice.secagem.input" type="checkbox">
+                <label for="selfservice.secagem.input">Secagem</label>
                 <article class="ac-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</article>
             </section>
-            <section id="servicos.engomadoria">
-                <input id="servicos.engomadoria.input" name="servicos.engomadoria.input" type="checkbox">
-                <label for="servicos.engomadoria.input">Engomadoria</label>
+            <section id="selfservice.engomadoria">
+                <input id="selfservice.engomadoria.input" name="selfservice.engomadoria.input" type="checkbox">
+                <label for="selfservice.engomadoria.input">Engomadoria</label>
                 <article class="ac-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</article>
             </section>
             <section id="servicos.apoioestudo">
@@ -83,8 +146,32 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </article>
         </section>
+        <section id="contatos.horario.">
+            <input id="contatos.horario.input" name="contatos.horario.input" type="checkbox">
+            <label for="contatos.horario.input">Horario</label>
+            <article class="ac-medium">
+                <p>Serviço Self-service: 2f a Dom - 08h00 às 22h00</p>
+                <p>Serviço personalizado: 2f a 6f - 9h00-13h00 e das 14h00-19h00</p>
+                <p>Lavantamento de cartões: 2f a 6f - 9h00-13h00 e das 14h00-19h00</p>
+            </article>
+        </section>
+        <section id="contatos.localizacao">
+            <input id="contatos.localizacao.input" name="contatos.localizacao.input" type="checkbox">
+            <label for="contatos.localizacao.input">Localização</label>
+            <article class="ac-large">
+                <p>Praça Helena Vaz da Silva, nº 4A</p>
+                <div id="contatos.localizacao.googlemaps"></div>
+            </article>
+        </section>
+        <section id="contatos.facebook">
+            <input id="contatos.facebook.input" name="contatos.facebook.input" type="checkbox">
+            <label for="contatos.facebook.input">Facebook</label>
+            <article class="ac-large">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </article>
+        </section>
     </main>
-    <aside>
+    <aside class="ac-hide">
         <header>
             <h1>Side by side</h1>
         </header>
