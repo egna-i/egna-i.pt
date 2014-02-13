@@ -178,3 +178,36 @@ nav ul li ul li a {
     width: 500px;
     height: 500px;
 }
+/* BEGIN FOOTER */
+
+footer {
+    width: 100%;
+    font-size: 0.6em;
+}
+.footercell {
+    clear: both;
+    float: left;
+    display: block;
+    position: relative;
+    margin: 0.2em 0;
+}
+.footercolumn {
+    display: inline;
+    float: left;
+    margin: 0 1em;
+    width: 18%
+}
+.footertable {
+    margin: 0 5%;
+}
+#copyright {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+footer a {
+    text-decoration: none;
+    color: #555;
+}
+/* END FOOTER */
