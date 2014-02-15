@@ -196,11 +196,19 @@ nav ul li ul li a {
 .ac-container input:checked ~ article.ac-large {
     height: 10em;
 }
+.ac-container input:checked ~ article.ac-xlarge {
+    height: 40em;
+}
 /* END COLLAPSE */
 
+/*
 .contatos.localizacao.googlemaps {
     width: 500px;
     height: 500px;
+}*/
+iframe {
+    width: 100%;
+    height: 30em;
 }
 
 /* BEGIN HEADER */
