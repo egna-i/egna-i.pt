@@ -92,8 +92,10 @@ nav ul li ul li a {
     margin: 1em;
     text-align: left;
     float: left;
+    margin: 0 1em 0 1em;
 }
-.ac-container section {
+.ac-container section,
+.ac-side section {
     /*border-radius: 10em;*/
     margin: 1em 0;
 
@@ -107,10 +109,12 @@ nav ul li ul li a {
 }
 
 
-.ac-container label {
+.ac-container label,
+.ac-side label {
     /*/font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;*/
     padding: 5px 20px;
     position: relative;
+    overflow: hidden;
     z-index: 20;
     display: block;
     height: 2em;
@@ -130,9 +134,12 @@ nav ul li ul li a {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#156', GradientType=0);
     box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 1px 0px 0px 0px rgba(255, 255, 255, 0.9) inset, 0px 2px 2px rgba(0, 0, 0, 0.1);*/
 }
-.ac-container label:hover {
+.ac-container label:hover,
+.ac-side label:hover {
     background: #176;
 }
+.ac-side input:checked + label,
+.ac-side input:checked + label:hover,
 .ac-container input:checked + label,
 .ac-container input:checked + label:hover {
     background: #176;
@@ -142,6 +149,8 @@ nav ul li ul li a {
     /*text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.1);*/
 }
+.ac-side label:hover:after,
+.ac-side input:checked + label:hover:after,
 .ac-container label:hover:after,
 .ac-container input:checked + label:hover:after {
     content: '';
@@ -155,9 +164,11 @@ nav ul li ul li a {
 .ac-container input:checked + label:hover:after {
     /*background-image: url(../images/arrow_up.png);*/
 }
+.ac-side input,
 .ac-container input {
     display: none;
 }
+.ac-side article,
 .ac-container article {
     background: #cfc; /*brown*/
     margin-top: -1px;
@@ -177,6 +188,7 @@ nav ul li ul li a {
     font-size: 1em;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
+.ac-side input:checked ~ article,
 .ac-container input:checked ~ article {
     -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
     -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
@@ -199,7 +211,9 @@ nav ul li ul li a {
 .ac-container input:checked ~ article.ac-xlarge {
     height: 40em;
 }
-/* END COLLAPSE */
+.ac-side input:checked ~ article.ac-medium {
+    height: 20em;
+}/* END COLLAPSE */
 
 /*
 .contatos.localizacao.googlemaps {
