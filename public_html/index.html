@@ -1,257 +1,242 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Egna-i</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="initial-scale=1,width=device-width">
+        <meta name="description" content="Egna-i Ltd: Lavandadia self-service e Apoio ao estudo">
+        <meta name="keywords" content="lavandaria, secagem, engomadoria, self-service, automática, inovaçãoo, Egna-i, Egna">
+        <meta name="author" content="Egna-i Ltd">
+        <meta name="application-name" content="Egna-i App">
 
-<head>
-    <title>Egna-i</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-Frame-Options" content="allow">
-    <meta name="viewport" content="initial-scale=1,width=device-width">
-    <meta name="description" content="Egna-i Ltd: Lavandadia self-service e Apoio ao estudo">
-    <meta name="keywords" content="lavandaria, secagem, engomadoria, self-service, automática, inovação, Egna-i, Egna">
-    <meta name="author" content="Egna-i Ltd">
-    <meta name="application-name" content="Egna-i App">
-    <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/vendor/normalize.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="js/vendor/jquery-2.1.0.min.js"></script>
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="js/main.js"></script>
-</head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
+        <script src="js/vendor/jquery-2.1.0.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/skel.min.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel-noscript.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+    </head>
+    <body>
 
-<body>
-    <!--[if lt IE 9]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <header>
-        <section id="header">
-            <!--<img width="100%" height="2em" />-->
-        </section>
-    </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="#egna">Egna-i</a>
-                <ul>
-                    <li>
-                        <a href="#egna.quemsomos">Quem somos</a>
-                    </li>
-                    <li>
-                        <a href="#egna.missao">Missão</a>
-                    </li>
+        <!-- Nav -->
+            <nav id="nav">
+                <ul class="container">
+                    <li><a href="#top">Início</a></li>
+                    <li><a href="#selfservice">Automáticos</a></li>
+                    <li><a href="#customservices">Personalizados</a></li>
+                    <li><a href="#contact">Contactos</a></li>
                 </ul>
-            </li>
-            <li>
-                <a href="#selfservice">Serviços Self-Service</a>
-                <ul>
-                    <li>
-                        <a href="#selfservice.lavandaria">Lavandaria</a>
-                    </li>
-                    <li>
-                        <a href="#selfservice.secagem">Secagem</a>
-                    </li>
-                    <li>
-                        <a href="#selfservice.engomadoria">Engomadoria</a>
-                    </li>
-                    <li>
-                        <a href="#servicos.apoioestudo">Apoio ao Estudo</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#customservice">Serviços Personalizados</a>
-                <ul>
-                    <li>
-                        <a href="#customservice.tratamento">Tratamento de Roupa</a>
-                    </li>
-                    <li>
-                        <a href="#customservice.recolha">Serviço de Recolha</a>
-                    </li>
-                    <li>
-                        <a href="#customservice.apoio">Apoio Escolar</a>
-                    </li>
-                    <li>
-                        <a href="#customservice.atl">Atividades de Tempos Livres</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#contatos">Contatos</a>
-                <ul>
-                    <li>
-                        <a href="#contatos.horario">Horário</a>
-                    </li>
-                    <li>
-                        <a href="#contatos.localizacao">Localização</a>
-                    </li>
-                    <li>
-                        <a href="#contatos.facebook">Facebook</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <main class="ac-container">
-        <section id="egna">
-            <section id="egna.quemsomos">
-                <input id="egna.quemsomos.input" name="egna.quemsomos.input" type="checkbox" checked>
-                <label for="egna.quemsomos.input">Quem somos</label>
-                <article class="ac-small">
-                    Somos uma família, que procura ajudar outras nas lides domésticas.
-                </article>
-            </section>
-            <section id="egna.missao">
-                <input id="egna.missao.input" name="egna.missao.input" type="checkbox" checked>
-                <label for="egna.missao.input">Missão</label>
-                <article class="ac-small">
-                    Ajudar famílias nas suas lides domésticas, de modo a terem mais tempo de qualidade em família.
-                </article>
-            </section>
-        </section>
+            </nav>
 
-        <section id="servicos">
-            <section id="selfservice.lavandaria">
-                <input id="selfservice.lavandaria.input" name="selfservice.lavandaria.input" type="checkbox" checked>
-                <label for="selfservice.lavandaria.input">Lavandaria</label>
-                <article class="ac-large">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        <!-- Home -->
+            <div class="wrapper wrapper-style1 wrapper-first">
+                <article class="container top" id="top">
+                    <div class="row">
+                        <div class="4u">
+                            <span class="me image image-full"><img src="img/png/logo.png" alt="logo" /></span>
+                        </div>
+                        <div class="8u">
+                            <header>
+                                <h1>Hi. I'm <strong>Jane Doe</strong>.</h1>
+                            </header>
+                            <p>And this is <strong>Miniport</strong>, a free, fully responsive HTML5 site template designed by <a href="http://n33.co/">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> &amp; released under the <a href="http://html5up.net/license/">CCA license</a>.</p>
+                            <a href="#work" class="button button-big">Learn about what I do</a>
+                        </div>
+                    </div>
                 </article>
-            </section>
-            <section id="selfservice.secagem">
-                <input id="selfservice.secagem.input" name="selfservice.secagem.input" type="checkbox" checked>
-                <label for="selfservice.secagem.input">Secagem</label>
-                <article class="ac-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</article>
-            </section>
-            <section id="selfservice.engomadoria">
-                <input id="selfservice.engomadoria.input" name="selfservice.engomadoria.input" type="checkbox" checked>
-                <label for="selfservice.engomadoria.input">Engomadoria</label>
-                <article class="ac-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</article>
-            </section>
-            <section id="servicos.apoioestudo">
-                <input id="servicos.apoioestudo.input" name="servicos.apoioestudo.input" type="checkbox" checked>
-                <label for="servicos.apoioestudo.input">Apoio ao Estudo</label>
-                <article class="ac-large">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+
+        <!-- Work -->
+            <div class="wrapper wrapper-style2">
+                <article id="work">
+                    <header>
+                        <h2>I design and build amazing things.</h2>
+                        <span>Odio turpis amet sed consequat eget posuere consequat.</span>
+                    </header>
+                    <div class="container">
+                        <div class="row">
+                            <div class="4u">
+                                <section class="box box-style1">
+                                    <span class="fa featured fa-comments-o"></span>
+                                    <h3>Consequat lorem</h3>
+                                    <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+                                </section>
+                            </div>
+                            <div class="4u">
+                                <section class="box box-style1">
+                                    <span class="fa featured fa-file-o"></span>
+                                    <h3>Lorem dolor tempus</h3>
+                                    <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+                                </section>
+                            </div>
+                            <div class="4u">
+                                <section class="box box-style1">
+                                    <span class="fa featured fa-thumbs-o-up"></span>
+                                    <h3>Feugiat posuere</h3>
+                                    <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+                        <a href="#portfolio" class="button button-big">See some of my recent work</a>
+                    </footer>
                 </article>
-            </section>
-        </section>
-        <section id="contatos">
-            <input id="contatos.input" name="contatos.input" type="checkbox" checked>
-            <label for="contatos.input">Contatos</label>
-            <article class="ac-large">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </article>
-        </section>
-        <section id="contatos.horario.">
-            <input id="contatos.horario.input" name="contatos.horario.input" type="checkbox" checked>
-            <label for="contatos.horario.input">Horario</label>
-            <article class="ac-medium">
-                <p>Serviço Self-service: 2f a Dom - 08h00 às 22h00</p>
-                <p>Serviço personalizado: 2f a 6f - 9h00-13h00 e das 14h00-19h00</p>
-                <p>Lavantamento de cartões: 2f a 6f - 9h00-13h00 e das 14h00-19h00</p>
-            </article>
-        </section>
-        <section id="contatos.localizacao">
-            <input id="contatos.localizacao.input" name="contatos.localizacao.input" type="checkbox" checked>
-            <label for="contatos.localizacao.input">Localização</label>
-            <article class="ac-xlarge">
-                Praça Helena Vaz da Silva, nº 4A
-                <br/>2610-304 Amadora
-                <div id="googlemaps">
-                    <a href="https://www.google.com/maps?t=m&sll=38.7418544,-9.212935&sspn=0.0064268,0.0109864&q=Pra%C3%A7a+Helena+Vaz+da+Silva+4A&output=classic&dg=ntvo&output=embed">Ver mapa</a>
-                </div>
-            </article>
-        </section>
-        <section id="contatos.facebook">
-            <input id="contatos.facebook.input" name="contatos.facebook.input" type="checkbox" checked>
-            <label for="contatos.facebook.input">Facebook</label>
-            <article class="ac-large">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </article>
-        </section>
-    </main>
-    <aside class="ac-side">
-        <section id="side.news">
-            <input id="side.news.input" name="side.news.input" type="checkbox" checked>
-            <label for="side.news.input">Side by side</label>
-            <article class="ac-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</article>
-        </section>
-    </aside>
-    <footer>
-        <div class="footertable">
-            <div class="footercolumn">
-                <a href="#egna">
-                    <h2>Egna-i</h2>
-                </a>
-                <a href="#egna.quemsomos" class="footercell">Quem Somos</a>
-                <br>
-                <a href="#egna.missao" class="footercell">Missão</a>
-                <br>
             </div>
-            <div class="footercolumn">
-                <a href="#selfservice">
-                    <h2>Serviços</h2>
-                </a>
-                <a href="#selfservice.lavandaria" class="footercell">Lavandaria</a>
-                <br>
-                <a href="#selfservice.secagem" class="footercell">Secagem</a>
-                <br>
-                <a href="#selfservice.engomadoria" class="footercell">Engomadoria</a>
-                <br>
-                <a href="#servicos.apoioestudo" class="footercell">Apoio ao Estudo</a>
-                <br>
-            </div>
-            <div class="footercolumn">
-                <a href="#customservice">
-                    <h2>Serviços personalizados</h2>
-                </a>
-                <a href="#customservice.tratamento" class="footercell">Tratamento de Roupa</a>
-                <br>
-                <a href="#customservice.recolha" class="footercell">Serviço Recolha</a>
-                <br>
-                <a href="#customservice.apoioescolar" class="footercell">Apoio Escolar</a>
-                <br>
-                <a href="#customservice.atl" class="footercell">Atividades dos tempos livres</a>
-                <br>
-            </div>
-            <div class="footercolumn">
-                <a href="#pricing">
-                    <h2>Preços</h2>
-                </a>
-                <a href="#pricing" class="footercell">Preçário</a>
-                <br>
-            </div>
-            <div class="footercolumn">
-                <a href="#contatos">
-                    <h2>Contatos</h2>
-                </a>
-                <a href="#contatos.horario" class="footercell">Horário</a>
-                <br>
-                <a href="#contatos.localizacao" class="footercell">Localização</a>
-                <br>
-                <a href="#contatos.info" class="footercell">Informações</a>
-                <br>
-            </div>
-        </div>
-        <div style="float:initial"></div>
-        <div id="copyright">
-            <p>Copyright © 2014 Egna-i Ltd. Todos os direitos reservados</p>
-        </div>
 
-    </footer>
-    <script>
-        $(window).load(function() {
-    $('#googlemaps').append(function(index){
-        //var hash = $(this).attr('data-gravatar-hash');
-        var iframebegin = '<iframe name="googlemaps" width="100%" height="100%" sandbox="allow-same-origin allow-scripts" seamless src=' + getUrlGoogleMaps() + '>';
-        var iframeinner = '<a href=' + getUrlGoogleMaps() + '>Ver mapa</a>';
-        var iframeend = '</iframe>';
-        return iframebegin + iframeinner + iframeend
-    });
+        <!-- Portfolio -->
+            <div class="wrapper wrapper-style3">
+                <article id="portfolio">
+                    <header>
+                        <h2>Awesome work makes happy clients.</h2>
+                        <span>Proin odio consequat  sapien vestibulum ipsum primis sed amet consequat lorem dolore feugiat lorem ipsum dolore.</span>
+                    </header>
+                    <div class="container">
+                        <div class="row">
+                            <div class="12u">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="4u">
+                                <article class="box box-style2">
+                                    <a href="http://flypixel.com/generic-smartphone/8949517882265310" class="image image-full"><img src="images/portfolio01.jpg" alt="" /></a>
+                                    <h3><a href="http://flypixel.com/generic-smartphone/8949517882265310">Magna feugiat</a></h3>
+                                    <p>Ornare nulla proin odio consequat.</p>
+                                </article>
+                            </div>
+                            <div class="4u">
+                                <article class="box box-style2">
+                                    <a href="http://flypixel.com/n33" class="image image-full"><img src="images/portfolio02.jpg" alt="" /></a>
+                                    <h3><a href="http://flypixel.com/n33">Veroeros primis</a></h3>
+                                    <p>Ornare nulla proin odio consequat.</p>
+                                </article>
+                            </div>
+                            <div class="4u">
+                                <article class="box box-style2">
+                                    <a href="http://flypixel.com/wood-ui-kit/3574765984616310" class="image image-full"><img src="images/portfolio03.jpg" alt="" /></a>
+                                    <h3><a href="http://flypixel.com/wood-ui-kit/3574765984616310">Lorem ipsum</a></h3>
+                                    <p>Ornare nulla proin odio consequat.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="4u">
+                                <article class="box box-style2">
+                                    <a href="http://flypixel.com/n33-pattern-set-1/3522389001865317" class="image image-full"><img src="images/portfolio04.jpg" alt="" /></a>
+                                    <h3><a href="http://flypixel.com/n33-pattern-set-1/3522389001865317">Tempus dolore</a></h3>
+                                    <p>Ornare nulla proin odio consequat.</p>
+                                </article>
+                            </div>
+                            <div class="4u">
+                                <article class="box box-style2">
+                                    <a href="http://flypixel.com/cityscape/9803996277226316" class="image image-full"><img src="images/portfolio05.jpg" alt="" /></a>
+                                    <h3><a href="http://flypixel.com/cityscape/9803996277226316">Feugiat aliquam</a></h3>
+                                    <p>Ornare nulla proin odio consequat.</p>
+                                </article>
+                            </div>
+                            <div class="4u">
+                                <article class="box box-style2">
+                                    <a href="http://flypixel.com/n33" class="image image-full"><img src="images/portfolio06.jpg" alt="" /></a>
+                                    <h3><a href="http://flypixel.com/n33">Sed amet ornare</a></h3>
+                                    <p>Ornare nulla proin odio consequat.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+                        <a href="#contact" class="button button-big">Get in touch with me</a>
+                    </footer>
+                </article>
+            </div>
 
-})
-    </script>
-</body>
+        <!-- Contact -->
+            <div class="wrapper wrapper-style4">
+                <article id="contact" class="container small">
+                    <header>
+                        <h2>Want to hire me? Get in touch!</h2>
+                        <span>Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.</span>
+                    </header>
+                    <div>
+                        <div class="row">
+                            <div class="12u">
+                                <form method="post" action="#">
+                                    <div>
+                                        <div class="row half">
+                                            <div class="6u">
+                                                <input type="text" name="name" id="name" placeholder="Name" />
+                                            </div>
+                                            <div class="6u">
+                                                <input type="text" name="email" id="email" placeholder="Email" />
+                                            </div>
+                                        </div>
+                                        <div class="row half">
+                                            <div class="12u">
+                                                <input type="text" name="subject" id="subject" placeholder="Subject" />
+                                            </div>
+                                        </div>
+                                        <div class="row half">
+                                            <div class="12u">
+                                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="12u">
+                                                <a href="#" class="button form-button-submit">Send Message</a>
+                                                <a href="#" class="button button-alt form-button-reset">Clear Form</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
 
+                    </div>
+                    <footer>
+                        <div class="row">
+                            <div class="12u">
+                                <hr />
+                                <h3>Find me on ...</h3>
+                                <ul class="social">
+                                    <li class="twitter"><a href="http://twitter.com/n33co" class="fa fa-twitter"><span>Twitter</span></a></li>
+                                    <li class="facebook"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+                                    <li class="dribbble"><a href="http://dribbble.com/n33" class="fa fa-dribbble"><span>Dribbble</span></a></li>
+                                    <li class="linkedin"><a href="#" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
+                                    <li class="tumblr"><a href="#" class="fa fa-tumblr"><span>Tumblr</span></a></li>
+                                    <li class="googleplus"><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+                                    <li class="github"><a href="http://github.com/n33" class="fa fa-github"><span>Github</span></a></li>
+                                    <!--
+                                    <li class="rss"><a href="#" class="fa fa-rss"><span>RSS</span></a></li>
+                                    <li class="instagram"><a href="#" class="fa fa-instagram"><span>Instagram</span></a></li>
+                                    <li class="foursquare"><a href="#" class="fa fa-foursquare"><span>Foursquare</span></a></li>
+                                    <li class="skype"><a href="#" class="fa fa-skype"><span>Skype</span></a></li>
+                                    <li class="soundcloud"><a href="#" class="fa fa-soundcloud"><span>Soundcloud</span></a></li>
+                                    <li class="youtube"><a href="#" class="fa fa-youtube"><span>YouTube</span></a></li>
+                                    <li class="blogger"><a href="#" class="fa fa-blogger"><span>Blogger</span></a></li>
+                                    <li class="flickr"><a href="#" class="fa fa-flickr"><span>Flickr</span></a></li>
+                                    <li class="vimeo"><a href="#" class="fa fa-vimeo"><span>Vimeo</span></a></li>
+                                    -->
+                                </ul>
+                                <hr />
+                            </div>
+                        </div>
+                        <ul id="copyright" class="copyright">
+                            <li>Copyright &copy; 2014 Egna-i Ltd. Todos os direitos reservados</li>
+                            <li>Templates: <a href="http://html5up.net/">HTML5 UP</a></li>
+                        </ul>
+                    </footer>
+                </article>
+            </div>
+
+
+    </body>
 </html>
