@@ -1832,37 +1832,40 @@ nav .active:before {
 .top p a {
     color: inherit;
 }
-
 /*********************************************************************************/
 
 /*  Pricing                                                                      */
 
 /*********************************************************************************/
 
-.pricingtable
-{
+.pricingtable {
     width: 100%;
 }
-
-.pricingname
-{
+.pricingname {
     text-align: left;
 }
-.pricingvalue
-{
+.pricingvalue {
     text-align: right;
 }
+.pricingremark:after
+/*pricingremark*/
 
+{
+    vertical-align: super;
+    content: "1";
+}
 /*********************************************************************************/
 
 /* Copyright                                                                     */
 
 /*********************************************************************************/
 
-.copyright {
+.copyright,
+.sitemap {
     color: #666;
 }
-.copyright a {
+.copyright a,
+.sitemap a {
     color: inherit;
     -moz-transition: color .2s ease-in-out;
     -webkit-transition: color .2s ease-in-out;
@@ -1870,6 +1873,10 @@ nav .active:before {
     -ms-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
 }
-.copyright a:hover {
+.copyright a:hover,
+.sitemap a:hover {
     color: #777;
+}
+.mainfooter {
+    padding: 8em 0 0em 0;
 }
