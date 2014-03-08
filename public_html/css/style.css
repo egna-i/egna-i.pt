@@ -39,7 +39,7 @@ textarea {
 }
 a {
     color: #3B95C6;
-    text-decoration: underline;
+    text-decoration: none;
     -moz-transition: color .2s ease-in-out;
     -webkit-transition: color .2s ease-in-out;
     -o-transition: color .2s ease-in-out;
@@ -1832,6 +1832,27 @@ nav .active:before {
 .top p a {
     color: inherit;
 }
+
+/*********************************************************************************/
+
+/*  Pricing                                                                      */
+
+/*********************************************************************************/
+
+.pricingtable
+{
+    width: 100%;
+}
+
+.pricingname
+{
+    text-align: left;
+}
+.pricingvalue
+{
+    text-align: right;
+}
+
 /*********************************************************************************/
 
 /* Copyright                                                                     */
