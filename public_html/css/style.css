@@ -215,7 +215,6 @@ article:last-child {
     text-decoration: none;
     font-weight: 700;
     border: 0;
-    outline: 0;
     cursor: pointer;
     border-radius: 8px;
     text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
@@ -374,7 +373,6 @@ ul.social li a {
     position: relative;
     width: 48px;
     height: 48px;
-    outline: 0;
     color: #2E2E2E;
     /* !important;*/
     line-height: 48px;
@@ -491,34 +489,42 @@ ul.social li a span {
 }
 @-moz-keyframes spin {
     0% {
-        -moz-transform: rotate(0deg)
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-        -moz-transform: rotate(359deg)
+        -moz-transform: rotate(359deg);
+        transform: rotate(359deg);
     }
 }
 @-webkit-keyframes spin {
     0% {
-        -webkit-transform: rotate(0deg)
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(359deg)
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
     }
 }
 @-o-keyframes spin {
     0% {
-        -o-transform: rotate(0deg)
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-        -o-transform: rotate(359deg)
+        -o-transform: rotate(359deg);
+        transform: rotate(359deg);
     }
 }
 @-ms-keyframes spin {
     0% {
-        -ms-transform: rotate(0deg)
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-        -ms-transform: rotate(359deg)
+        -ms-transform: rotate(359deg);
+        transform: rotate(359deg);
     }
 }
 @keyframes spin {
@@ -526,7 +532,7 @@ ul.social li a span {
         transform: rotate(0deg)
     }
     100% {
-        transform: rotate(359deg)
+        transform: rotate(359deg);
     }
 }
 .fa-rotate-90 {
@@ -1802,7 +1808,6 @@ nav a {
     display: block;
     color: #fff;
     text-decoration: none;
-    outline: 0;
 }
 nav a:hover {
     color: #fff;
@@ -1878,5 +1883,5 @@ nav .active:before {
     color: #777;
 }
 .mainfooter {
-    padding: 8em 0 0em 0;
+    padding: 8em 0 0 0;
 }
