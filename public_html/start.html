@@ -38,9 +38,11 @@
             <li>
                 <a href="#selfservice">Automáticos</a>
             </li>
-            <li>
-                <a href="#customservices">Personalizados</a>
-            </li>
+            <hide>
+                <li>
+                    <a href="#customservices">Personalizados</a>
+                </li>
+            </hide>
             <li>
                 <a href="#contact">Localização</a>
             </li>
@@ -75,12 +77,14 @@
                             <strong>
                                 <em>tratar a sua roupa</em>
                             </strong>
-                        </a>e ter
-                        <a href="#customservices">
-                            <strong>
-                                <em>explicações para os seus filhos</em>
-                            </strong>
-                        </a>.</p>
+                        </a>
+                        <hide>e ter
+                            <a href="#customservices">
+                                <strong>
+                                    <em>explicações para os seus filhos</em>
+                                </strong>
+                            </a>
+                        </hide>.</p>
                     <a href="#selfservice" class="button">Serviços</a>
                     <a href="#pricing" class="button">Preçário</a>
                     <a href="#contact" class="button">Localização</a>
@@ -98,89 +102,96 @@
             </header>
             <div class="container">
                 <div class="row">
-                    <div class="4u">
+                    <div class="6u">
                         <section class="">
                             <h3>Lavandaria</h3>
                             <p>Lave você mesmo a sua roupa a um preço simpático, com um horário alargado.</p>
                         </section>
                     </div>
-                    <div class="4u">
+                    <div class="6u">
                         <section class="">
                             <h3>Secagem</h3>
                             <p>Está mau tempo e não consegue secar a sua roupa em casa? Utilize as secadoras automáticas.</p>
                         </section>
                     </div>
-                    <div class="4u">
-                        <section class="">
-                            <h3>Engomadoria</h3>
-                            <p>Brevemente pode engomar você mesmo no nosso espaço.</p>
-                        </section>
-                    </div>
+                    <hide>
+                        <div class="4u">
+                            <section class="">
+                                <h3>Engomadoria</h3>
+                                <p>Brevemente pode engomar você mesmo no nosso espaço.</p>
+                            </section>
+                        </div>
+                    </hide>
                 </div>
             </div>
             <footer>
-                <p>Não tem tempo para esperar? Nós fazemos.</p>
-                <a href="#customservices" class="button button-big">Serviços Personalizados</a>
-            </footer>
-        </article>
-    </div>
-
-    <!-- Custom Services -->
-    <div class="wrapper wrapper-style1">
-        <article id="customservices">
-            <header>
-                <h2>Serviços Personalizados.</h2>
-                <span>Pode encontrar aqui um catálogo de serviços à sua medida que satisfaçam as necessidades do seu lar.</span>
-            </header>
-            <div class="container">
-                <div class="row">
-                    <div class="4u">
-                        <section class="">
-                            <h3>Tratamento de roupa</h3>
-                            <p>Não tem tempo para esperar? Nós podemos lavar e secar a sua roupa com os nossos serviços automáticos.</p>
-                        </section>
-                    </div>
-                    <div class="4u">
-                        <section class="">
-                            <h3>Engomadoria</h3>
-                            <p>Não gosta de engomar? Nós engomamos.</p>
-                        </section>
-                    </div>
-                    <div class="4u">
-                        <section class="">
-                            <h3>Pequenos Arranjos Domésticos</h3>
-                            <p>Brevemente pode ter ajuda em pequenos arranjos, tais como elétricos, canalizações.</p>
-                        </section>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="4u">
-                        <section class="">
-                            <h3>Explicações</h3>
-                            <p>Temos um serviço de explicações para alunos do primeiro até ao nono ano.</p>
-                        </section>
-                    </div>
-                    <div class="4u">
-                        <section class="">
-                            <h3>Atividades de Tempos Livres</h3>
-                            <p>Temos um serviço de tempos livres para crianças, durante o periodo de férias escolares com exceção de domingo e feriados.</p>
-                        </section>
-                    </div>
-                    <div class="4u">
-                        <section class="">
-                            <h3>Empréstimo de ferramentas</h3>
-                            <p>Brevemente teremos um sistema de empréstimo de ferramentas</p>
-                        </section>
-                    </div>
-                </div>
-            </div>
-            <footer>
+                <hide>
+                    <p>Não tem tempo para esperar? Nós fazemos.</p>
+                    <a href="#customservices" class="button button-big">Serviços Personalizados</a>
+                </hide>
                 <p>Consulte em detalhe os nossos preços</p>
                 <a href="#pricing" class="button button-big">Preçário</a>
             </footer>
         </article>
     </div>
 
+    <hide>
+        <!-- Custom Services -->
+        <div class="wrapper wrapper-style1">
+            <article id="customservices">
+                <header>
+                    <h2>Serviços Personalizados.</h2>
+                    <span>Pode encontrar aqui um catálogo de serviços à sua medida que satisfaçam as necessidades do seu lar.</span>
+                </header>
+                <div class="container">
+                    <div class="row">
+                        <div class="4u">
+                            <section class="">
+                                <h3>Tratamento de roupa</h3>
+                                <p>Não tem tempo para esperar? Nós podemos lavar e secar a sua roupa com os nossos serviços automáticos.</p>
+                            </section>
+                        </div>
+                        <div class="4u">
+                            <section class="">
+                                <h3>Engomadoria</h3>
+                                <p>Não gosta de engomar? Nós engomamos.</p>
+                            </section>
+                        </div>
+                        <div class="4u">
+                            <section class="">
+                                <h3>Pequenos Arranjos Domésticos</h3>
+                                <p>Brevemente pode ter ajuda em pequenos arranjos, tais como elétricos, canalizações.</p>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="4u">
+                            <section class="">
+                                <h3>Explicações</h3>
+                                <p>Temos um serviço de explicações para alunos do primeiro até ao nono ano.</p>
+                            </section>
+                        </div>
+                        <div class="4u">
+                            <section class="">
+                                <h3>Atividades de Tempos Livres</h3>
+                                <p>Temos um serviço de tempos livres para crianças, durante o periodo de férias escolares com exceção de domingo e feriados.</p>
+                            </section>
+                        </div>
+                        <div class="4u">
+                            <section class="">
+                                <h3>Empréstimo de ferramentas</h3>
+                                <p>Brevemente teremos um sistema de empréstimo de ferramentas</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <p>Consulte em detalhe os nossos preços</p>
+                    <a href="#pricing" class="button button-big">Preçário</a>
+                </footer>
+            </article>
+        </div>
+    </hide>
 
     <!-- Pricing -->
     <div class="wrapper wrapper-style1">
@@ -192,7 +203,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="6u">
+                    <div class="12u">
                         <section class="">
                             <h3>Tratamento de roupa</h3>
                             <table class="pricingtable">
@@ -223,7 +234,7 @@
                                         <span class="fa fa-euro pricingremark"></span>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="pricinghide">
                                     <td class="pricingname">Engomadoria self-service (15 minutos)</td>
                                     <td class="pricingvalue">1,50
                                         <span class="fa fa-euro"></span>
@@ -232,7 +243,7 @@
                                         <span class="fa fa-euro pricingremark"></span>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="pricinghide">
                                     <td class="pricingname">Lavagem 7Kg (a pedido)</td>
                                     <td class="pricingvalue">7,00
                                         <span class="fa fa-euro"></span>
@@ -241,7 +252,7 @@
                                         <span class="fa fa-euro pricingremark"></span>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="pricinghide">
                                     <td class="pricingname">Lavagem 13Kg (a pedido)</td>
                                     <td class="pricingvalue">9,00
                                         <span class="fa fa-euro"></span>
@@ -250,7 +261,7 @@
                                         <span class="fa fa-euro pricingremark"></span>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="pricinghide">
                                     <td class="pricingname">Secagem (20 minutos) (a pedido)</td>
                                     <td class="pricingvalue">5,00
                                         <span class="fa fa-euro"></span>
@@ -259,7 +270,7 @@
                                         <span class="fa fa-euro pricingremark"></span>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="pricinghide">
                                     <td class="pricingname">Engomadoria 0-29 peças</td>
                                     <td class="pricingvalue">15,00
                                         <span class="fa fa-euro"></span>
@@ -268,7 +279,7 @@
                                         <span class="fa fa-euro pricingremark"></span>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="pricinghide">
                                     <td class="pricingname">Engomadoria 30-49 peças</td>
                                     <td class="pricingvalue">25,00
                                         <span class="fa fa-euro"></span>
@@ -277,7 +288,7 @@
                                         <span class="fa fa-euro pricingremark"></span>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="pricinghide">
                                     <td class="pricingname">Engomadoria 50-69 peças</td>
                                     <td class="pricingvalue">28,00
                                         <span class="fa fa-euro"></span>
@@ -286,7 +297,7 @@
                                         <span class="fa fa-euro pricingremark"></span>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="pricinghide">
                                     <td class="pricingname">Engomadoria mais de 70 peças</td>
                                     <td class="pricingvalue">40,00
                                         <span class="fa fa-euro"></span>
@@ -295,7 +306,7 @@
                                         <span class="fa fa-euro pricingremark"></span>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="pricinghide">
                                     <td class="pricingname">Engomadoria (camisa por unidade)</td>
                                     <td class="pricingvalue">1,50
                                         <span class="fa fa-euro"></span>
@@ -304,7 +315,7 @@
                                         <span class="fa fa-euro pricingremark"></span>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="pricinghide">
                                     <td class="pricingname">Engomadoria (toalhas e lençóis por unidade)</td>
                                     <td class="pricingvalue">0,25
                                         <span class="fa fa-euro"></span>
@@ -316,76 +327,76 @@
                                 <tfoot>
                                     <td colspan="3" style="text-align:left">
                                         <br/>
-                                        <span>1 - Preços com cartão de fidelização. O cartão tem o custo de 10 euros.</span>
+                                        <span>1 - Preços com cartão de fidelização. O cartão tem o custo de 10 euros sob forma de caução.</span>
                                     </td>
                                 </tfoot>
-
                             </table>
-
                         </section>
                     </div>
-                    <div class="6u">
-                        <section class="">
-                            <h3>Preços de explicações/ATL</h3>
-                            <table class="pricingtable">
-                                <tr>
-                                    <td class="pricingname">Apoio ao estudo (1º ciclo)</td>
-                                    <td class="pricingvalue">7,5
-                                        <span class="fa fa-euro"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">Apoio ao estudo (2º ciclo)</td>
-                                    <td class="pricingvalue">10
-                                        <span class="fa fa-euro"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">Apoio ao estudo (1º ciclo) (3 horas semanais)</td>
-                                    <td class="pricingvalue">40
-                                        <span class="fa fa-euro"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">Apoio ao estudo (2º ciclo) (3 horas semanais)</td>
-                                    <td class="pricingvalue">60
-                                        <span class="fa fa-euro"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">ATL (por hora)</td>
-                                    <td class="pricingvalue">5,0
-                                        <span class="fa fa-euro"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">ATL (lanche)</td>
-                                    <td class="pricingvalue">1,5
-                                        <span class="fa fa-euro"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">ATL (almoço)</td>
-                                    <td class="pricingvalue">2,5
-                                        <span class="fa fa-euro"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">ATL (pacote de 5 horas por dia)</td>
-                                    <td class="pricingvalue">375
-                                        <span class="fa fa-euro"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">ATL (pacote de 9 horas por dia)</td>
-                                    <td class="pricingvalue">675
-                                        <span class="fa fa-euro"></span>
-                                    </td>
-                                </tr>
-                            </table>
+                    <hide>
+                        <div class="6u">
+                            <section class="">
+                                <h3>Preços de explicações/ATL</h3>
+                                <table class="pricingtable">
+                                    <tr>
+                                        <td class="pricingname">Apoio ao estudo (1º ciclo)</td>
+                                        <td class="pricingvalue">7,5
+                                            <span class="fa fa-euro"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricingname">Apoio ao estudo (2º ciclo)</td>
+                                        <td class="pricingvalue">10
+                                            <span class="fa fa-euro"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricingname">Apoio ao estudo (1º ciclo) (3 horas semanais)</td>
+                                        <td class="pricingvalue">40
+                                            <span class="fa fa-euro"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricingname">Apoio ao estudo (2º ciclo) (3 horas semanais)</td>
+                                        <td class="pricingvalue">60
+                                            <span class="fa fa-euro"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricingname">ATL (por hora)</td>
+                                        <td class="pricingvalue">5,0
+                                            <span class="fa fa-euro"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricingname">ATL (lanche)</td>
+                                        <td class="pricingvalue">1,5
+                                            <span class="fa fa-euro"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricingname">ATL (almoço)</td>
+                                        <td class="pricingvalue">2,5
+                                            <span class="fa fa-euro"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricingname">ATL (pacote de 5 horas por dia)</td>
+                                        <td class="pricingvalue">375
+                                            <span class="fa fa-euro"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricingname">ATL (pacote de 9 horas por dia)</td>
+                                        <td class="pricingvalue">675
+                                            <span class="fa fa-euro"></span>
+                                        </td>
+                                    </tr>
+                                </table>
 
-                        </section>
-                    </div>
+                            </section>
+                        </div>
+                    </hide>
                 </div>
             </div>
             <footer>
@@ -420,6 +431,10 @@
                                 <span>2610-304 Amadora</span>
                             </p>
                             <p>
+                                <span>38°44'30.7"N</span>
+                                <span>09°12'46.6"W</span>
+                            </p>
+                            <p>
                                 <span>
                                     <a href="https://www.google.com/maps?t=m&sll=38.7418544,-9.212935&sspn=0.0064268,0.0109864&q=Pra%C3%A7a+Helena+Vaz+da+Silva+4A&output=classic&dg=ntvo">Google Maps</a>
                                 </span>
@@ -452,9 +467,11 @@
                     <li>
                         <a href="#selfservice">Serviços automáticos</a>
                     </li>
-                    <li>
-                        <a href="#customservices">Apoio Escolar</a>
-                    </li>
+                    <hide>
+                        <li>
+                            <a href="#customservices">Apoio Escolar</a>
+                        </li>
+                    </hide>
                     <li>
                         <a href="#pricing">Preçário</a>
                     </li>

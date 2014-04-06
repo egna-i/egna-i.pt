@@ -80,11 +80,11 @@ form .button {
 /*********************************************************************************/
 
 .wrapper {
-    padding: 8em 0 8em 0;
+    padding: 4em 0 4em 0;
     text-align: center;
 }
 .wrapper-first {
-    padding-top: 12em;
+    padding-top: 10em;
 }
 /*********************************************************************************/
 
@@ -102,13 +102,17 @@ form .button {
     padding: 0.2em 1em 0.2em 1em;
     margin: 0.6em 0.2em 0.6em 0.2em;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 0.9em;
     -moz-transition: background-color .2s ease-in-out;
     -webkit-transition: background-color .2s ease-in-out;
     -o-transition: background-color .2s ease-in-out;
     -ms-transition: background-color .2s ease-in-out;
     transition: background-color .2s ease-in-out;
     color: #fff;
+}
+nav .container {
+    /* override normalize.css */
+    margin: 0 0;
 }
 /*********************************************************************************/
 
