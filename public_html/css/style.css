@@ -1763,7 +1763,7 @@ ul.social li a span {
 }
 .wrapper-style1 {
     background-image: none;
-    background-color: #fff;
+    background-color: #ffff88;
 }
 .wrapper-style2 {
     background-color: #fafafa;
@@ -1774,13 +1774,11 @@ ul.social li a span {
     text-shadow: 1px 1px 0 #fff;
 }
 .wrapper-style4 {
-    background-color: #303030;
-    color: #999;
-    text-shadow: -1px -1px 0 #181818;
+    background-color: #ffff88;
+    color: #000;
+    text-shadow: -1px -1px 0 #ffff00;
 }
-.wrapper-style4 {
-    color: #fff;
-}
+
 /*********************************************************************************/
 
 /* Nav                                                                           */
@@ -1788,7 +1786,7 @@ ul.social li a span {
 /*********************************************************************************/
 
 nav {
-    background-color: #282828;
+    background-color: #86AE56;
     text-align: center;
     position: fixed;
     left: 0;
