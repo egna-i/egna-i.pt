@@ -1852,12 +1852,30 @@ nav .active:before {
 .pricingvalue {
     text-align: right;
 }
-.pricingremark:after
-/*pricingremark*/
-
+.pricingremark1:after
 {
     vertical-align: super;
     content: "1";
+}
+.pricingremark2:after
+{
+    vertical-align: super;
+    content: "2";
+}
+.pricingremark3:after
+{
+    vertical-align: super;
+    content: "3";
+}
+.pricingremark4:after
+{
+    vertical-align: super;
+    content: "4";
+}
+.pricingremark5:after
+{
+    vertical-align: super;
+    content: "5";
 }
 /*********************************************************************************/
 
