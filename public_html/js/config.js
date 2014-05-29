@@ -19,7 +19,7 @@ window._skel_config = {
 
 /* jshint -W117 */
 jQuery(function () {
-/* jshint +W117 */
+    /* jshint +W117 */
 
     jQuery.fn.n33_formerize = function () {
         var _fakes = new Array(),
@@ -171,4 +171,3 @@ jQuery(function () {
     });
 
 });
-

@@ -12,44 +12,52 @@
     <meta name="application-name" content="Egna-i App">
     <meta name="google-site-verification" content="O50yIc5qpsqYt1OmQUq29g3sIn94wywGRvTCuEsHWAQ" />
 
+    <link rel="stylesheet" href="css/vendor/normalize.min.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
-    <script src="js/vendor/jquery-2.1.0.min.js"></script>
-    <script src="js/config.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <link rel="stylesheet" href="css/vendor/normalize.css" />
     <noscript>
-        <link rel="stylesheet" href="css/skel-noscript.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/style-desktop.css" />
+        <link rel="stylesheet" href="css/skel-noscript.min.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <link rel="stylesheet" href="css/style-desktop.min.css" />
     </noscript>
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
     <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
+    <script defer src="js/vendor/jquery-2.1.0.min.js"></script>
+    <script defer src="js/config.min.js"></script>
+    <script defer src="js/skel.min.js"></script>
 </head>
 
 <body>
 
     <!-- Nav -->
-    <nav id="nav">
-        <ul class="container">
-            <li>
-                <a href="#top">Egna</a>
-            </li>
-            <li>
-                <a href="#selfservice">Automáticos</a>
-            </li>
-            <li>
-                <a href="#customservices">Personalizados</a>
-            </li>
-            <li>
-                <a href="#contact">Localização</a>
-            </li>
-            <li>
-                <a href="#contact">Contactos</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="wrapper container">
+        <nav id="nav">
+            <ul class="row">
+                <!--<li class="u">
+                    <a href="#top"><img src="favicon.ico" alt="logo" /></a>
+                </li>-->
+                <li class="2u">
+                    <a href="#top">Egna</a>
+                </li>
+                <li class="2u">
+                    <a href="#selfservice">Lavandaria</a>
+                </li>
+                <li class="2u">
+                    <a href="#customservices">Personalizados</a>
+                </li>
+                <li class="2u">
+                    <a href="#customservices">Explicações</a>
+                </li>
+                <li class="2u">
+                    <a href="#contact">Localização</a>
+                </li>
+                <li class="2u">
+                    <a href="#contact">Contactos</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Top -->
     <div class="wrapper wrapper-style1 wrapper-first">
@@ -78,11 +86,11 @@
                             </strong>
                         </a>
                         e ter
-                            <a href="#customservices">
-                                <strong>
+                        <a href="#customservices">
+                            <strong>
                                     <em>explicações para os seus filhos</em>
                                 </strong>
-                            </a>
+                        </a>
                         .</p>
                     <a href="#selfservice" class="button">Serviços</a>
                     <a href="#pricing" class="button">Preçário</a>
@@ -90,9 +98,12 @@
                 </div>
                 <div class="12u">
                     <div class="slider">
-                            <div><strong>Destaques:</strong></div>
-                            <div><strong>Loja na Amadora com abertura marcada para dia dois de junho.</strong></div>
-                            <div><strong>Aproveite a campanha de abertura: Durante o mês de Junho pode-se habilitar-se a preços reduzidos da lavagem e secagem automática.</strong></div>
+                        <div><strong>Destaques:</strong>
+                        </div>
+                        <div><strong>Loja na Amadora com abertura marcada para dia dois de junho.</strong>
+                        </div>
+                        <div><strong>Aproveite a campanha de abertura: Durante o mês de Junho pode-se habilitar-se a preços reduzidos da lavagem e secagem automática.</strong>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -129,36 +140,36 @@
         </article>
     </div>
 
-<!-- Custom Services -->
+    <!-- Custom Services -->
     <div class="wrapper wrapper-style1">
-    <article id="customservices">
-        <header>
-            <h2>Serviços Personalizados.</h2>
-            <span>Pode encontrar aqui um catálogo de serviços à sua medida que satisfaçam as necessidades do seu lar.</span>
-        </header>
-        <div class="container">
-            <div class="row">
-                <div class="12u">
-                    <section class="">
-                        <h3>Tratamento de roupa</h3>
-                        <p>Não tem tempo para esperar? Nós podemos lavar e secar a sua roupa com os nossos serviços automáticos.</p>
-                    </section>
+        <article id="customservices">
+            <header>
+                <h2>Serviços Personalizados.</h2>
+                <span>Pode encontrar aqui um catálogo de serviços à sua medida que satisfaçam as necessidades do seu lar.</span>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="12u">
+                        <section class="">
+                            <h3>Tratamento de roupa</h3>
+                            <p>Não tem tempo para esperar? Nós podemos lavar e secar a sua roupa com os nossos serviços automáticos.</p>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="12u">
+                        <section class="">
+                            <h3>Apoio ao estudo</h3>
+                            <p>Temos um serviço de explicações para alunos do primeiro até ao nono ano.</p>
+                        </section>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="12u">
-                    <section class="">
-                        <h3>Apoio ao estudo</h3>
-                        <p>Temos um serviço de explicações para alunos do primeiro até ao nono ano.</p>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <p>Consulte em detalhe os nossos preços</p>
-            <a href="#pricing" class="button button-big">Preçário</a>
-        </footer>
-    </article>
+            <footer>
+                <p>Consulte em detalhe os nossos preços</p>
+                <a href="#pricing" class="button button-big">Preçário</a>
+            </footer>
+        </article>
     </div>
 
     <!-- Pricing -->
@@ -194,7 +205,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pricingname">Secagem (20 minutos)</td>
+                                    <td class="pricingname">Secagem</td>
                                     <td class="pricingvalue">2,00
                                         <span class="fa fa-euro"></span>
                                     </td>
@@ -307,7 +318,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pricingname">Pacote em grupo  (3 horas semanais - 1º ano ao 4º ano)
+                                    <td class="pricingname">Pacote em grupo (3 horas semanais - 1º ano ao 4º ano)
                                         <span class="pricingremark2"></span>
                                     </td>
                                     <td class="pricingvalue">50,00
@@ -365,7 +376,7 @@
                         </a>
                     </li>
                     <li class="rss">
-                        <a href="" class="fa fa-rss">
+                        <a href="rss/main.xml" class="fa fa-rss">
                             <span>Leitor de RSS</span>
                         </a>
                     </li>
@@ -419,7 +430,7 @@
                         <a href="#selfservice">Serviços automáticos</a>
                     </li>
                     <li>
-                       <a href="#customservices">Apoio ao Estudo</a>
+                        <a href="#customservices">Apoio ao Estudo</a>
                     </li>
                     <li>
                         <a href="#pricing">Preçário</a>
