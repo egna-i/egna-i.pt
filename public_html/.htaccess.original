@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://egna-i.pt/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://egna-i.pt$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.egna-i.pt/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.egna-i.pt$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
