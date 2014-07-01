@@ -46,6 +46,12 @@
             <link>http://www.egna-i.pt#top</link>
             <description>Durante o mês de Junho pode-se habilitar-se a preços reduzidos da lavagem e secagem automática.</description>
         </item>
+        <item>
+            <guid isPermaLink="false">7</guid>
+            <title>Campanha de verão</title>
+            <link>http://www.egna-i.pt#top</link>
+            <description>Durante o mês de Julho e Agosto a máquina de 13Kg a 6€ por lavagem.</description>
+        </item>
     </channel>
 
 </rss>
