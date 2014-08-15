@@ -170,4 +170,15 @@ jQuery(function () {
         }
     });
 
+    /**
+     * Todos os elementos com lang definido diferente do selecionado pelo browser são escondidos
+     */
+    var language = window.navigator.userLanguage || navigator.language;
+    var languageGlobal = language;
+    if (language.indexOf("-") >= 0)
+    {
+        languageGlobal = language.substring(0, language.indexOf("-"));
+    }
+    $(":visible[lang]:not([lang=" + languageGlobal + "])").attr("style", "display:none");
+
 });
