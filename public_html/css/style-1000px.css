@@ -26,6 +26,12 @@ body {
 .wrapper-first {
     padding-top: 0;
 }
+.wrapper-last {
+    padding-bottom: 0.01em;
+}
+.wrapper-style2 {
+    padding: 0 0 0 0;
+}
 .wrapper-style4 .row-special {
     margin: 2em 0 0 0;
     padding: 2em 0 2em 0;

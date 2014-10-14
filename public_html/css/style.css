@@ -1759,13 +1759,16 @@ ul.social li a span {
 .wrapper-first {
     box-shadow: none;
 }
+.wrapper-last {
+    box-shadow: none;
+}
 .wrapper-style1 {
     background-image: none;
     background-color: #fff;
 }
 .wrapper-style2 {
-    background-color: #fafafa;
-    text-shadow: 1px 1px 0 #fff;
+    background-image: none;
+    background-color: #fff;
 }
 .wrapper-style3 {
     background-color: #f4f4f4;

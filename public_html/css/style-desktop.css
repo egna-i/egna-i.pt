@@ -84,7 +84,13 @@ form .button {
     text-align: center;
 }
 .wrapper-first {
-    padding-top: 2em;
+    padding-top: 1em;
+}
+.wrapper-last {
+    padding-bottom: 0.01em;
+}
+.wrapper-style2 {
+    padding: 4em 0 0 0;
 }
 /*********************************************************************************/
 

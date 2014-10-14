@@ -140,7 +140,13 @@ ul.social li {
     text-align: center;
 }
 .wrapper-first {
-    padding-top: 0em;
+    padding-top: 0;
+}
+.wrapper-last {
+    padding-bottom: 0.01em;
+}
+.wrapper-style2 {
+    padding: 0 0 0 0;
 }
 /*********************************************************************************/
 
