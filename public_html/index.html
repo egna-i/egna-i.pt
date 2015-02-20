@@ -4,7 +4,7 @@
 <head>
     <title>Egna-i</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Cache-Control" content="max-age=120"/>
+    <meta http-equiv="Cache-Control" content="max-age=120" />
     <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
     <meta name="author" content="Egna-i Ltd">
     <meta name="application-name" content="Egna-i App">
@@ -26,6 +26,7 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
     <link rel="alternate" type="application/rss+xml" title="Egna-i" href="rss/main.xml">
     <script src="js/vendor/jquery-2.1.0.min.js"></script>
+    <script src="js/angular.min.js"></script>
     <script src="js/config.min.js"></script>
     <script src="js/skel.min.js"></script>
 </head>
@@ -76,6 +77,7 @@
                             <strong>Egna-i</strong>
                         </h1>
                     </header>
+                    <div ng-bind="message" style="display:none"> </div>
                     <p>Venha conhecer o
                         <a href="#contact">
                             <strong>
@@ -145,15 +147,19 @@
             </header>
             <div class="container">
                 <div class="row">
-                    <div class="12u">
+                    <div class="4u">
                         <section class="">
                             <h3>Tratamento de roupa</h3>
-                            <p>Não tem tempo para esperar? Nós podemos lavar e secar a sua roupa com os nossos serviços automáticos.</p>
+                            <p>Não tem tempo para esperar? Nós podemos lavar, secar e engomar a sua roupa com os nossos serviços.</p>
                         </section>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="12u">
+                    <div class="4u">
+                        <section class="">
+                            <h3>Engomadoria</h3>
+                            <p>Além de lavar e secar pode ter a sua roupa engomada.</p>
+                        </section>
+                    </div>
+                    <div class="4u">
                         <section class="">
                             <h3>Apoio ao estudo</h3>
                             <p>Temos um serviço de apoio ao estudo e explicações para alunos do primeiro até ao nono ano.</p>
@@ -272,8 +278,10 @@
                                     <tr>
                                         <td colspan="3" style="text-align:left">
                                             <br/>
-                                            <span>1 - Preços com cartão de fidelização.</span><br/>
-                                            <span>2 - Inclui Lavagem, Secagem e Dobragem.</span><br/>
+                                            <span>1 - Preços com cartão de fidelização.</span>
+                                            <br/>
+                                            <span>2 - Inclui Lavagem, Secagem e Dobragem.</span>
+                                            <br/>
                                             <span>3 - Inclui Lavagem, Secagem, Dobragem e Engomadoria.</span>
                                         </td>
                                     </tr>
@@ -284,7 +292,7 @@
                             <h3>Engomadoria</h3>
                             <table class="pricingtable">
                                 <tr>
-                                    <td class="pricingname">até 20 peças
+                                    <td class="pricingname">Até 20 peças
                                         <span class="pricingremark2"></span>
                                     </td>
                                     <td class="pricingvalue">0,90
@@ -295,7 +303,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pricingname">até 30 peças
+                                    <td class="pricingname">Até 30 peças
                                         <span class="pricingremark2"></span>
                                     </td>
                                     <td class="pricingvalue">0,85
@@ -306,8 +314,8 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pricingname">até 50 peças
-                                         <span class="pricingremark2"></span>
+                                    <td class="pricingname">Até 50 peças
+                                        <span class="pricingremark2"></span>
                                     </td>
                                     <td class="pricingvalue">0,80
                                         <span class="fa fa-euro"></span>
@@ -318,7 +326,7 @@
                                 </tr>
                                 <tr>
                                     <td class="pricingname">A partir de 51 peças
-                                         <span class="pricingremark2"></span>
+                                        <span class="pricingremark2"></span>
                                     </td>
                                     <td class="pricingvalue">0,75
                                         <span class="fa fa-euro"></span>
@@ -331,8 +339,10 @@
                                     <tr>
                                         <td colspan="3" style="text-align:left">
                                             <br/>
-                                            <span>1 - Preços com cartão de fidelização.</span><br/>
-                                            <span>2 - Preço por peça.</span><br/>
+                                            <span>1 - Preços com cartão de fidelização.</span>
+                                            <br/>
+                                            <span>2 - Preço por peça.</span>
+                                            <br/>
                                         </td>
                                     </tr>
                                 </tfoot>
@@ -344,59 +354,31 @@
                             <h3>Preços de apoio ao estudo</h3>
                             <table class="pricingtable">
                                 <tr>
-                                    <td class="pricingname">Apoio individual (1º ao 4º ano)</td>
-                                    <td class="pricingvalue">7,00
-                                        <span class="fa fa-euro pricingremark1"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">Apoio em grupo (1º ao 4º ano)
-                                        <span class="pricingremark2"></span>
-                                    </td>
+                                    <td class="pricingname">Apoio<span class="pricingremark3"></span>/Explicações<span class="pricingremark4"></span> (1º ao 4º ano)</td>
                                     <td class="pricingvalue">5,00
                                         <span class="fa fa-euro pricingremark1"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pricingname">Apoio individual (5º ao 9º ano)</td>
-                                    <td class="pricingvalue">10,00
+                                    <td class="pricingname">Apoio<span class="pricingremark3"></span>/Explicações<span class="pricingremark4"></span> (5º ao 9º ano)</td>
+                                    <td class="pricingvalue">7,00
                                         <span class="fa fa-euro pricingremark1"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pricingname">Apoio em grupo (5º ao 9º ano)
-                                        <span class="pricingremark2"></span>
-                                    </td>
-                                    <td class="pricingvalue">8,00
-                                        <span class="fa fa-euro pricingremark1"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">Pacote individual (3 horas semanais - 1º ano ao 4º ano)</td>
-                                    <td class="pricingvalue">60,00
-                                        <span class="fa fa-euro pricingremark3"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">Pacote em grupo (3 horas semanais - 1º ano ao 4º ano)
-                                        <span class="pricingremark2"></span>
+                                    <td class="pricingname">Pacote mensal (1º ao 4º ano)
+
                                     </td>
                                     <td class="pricingvalue">50,00
-                                        <span class="fa fa-euro pricingremark3"></span>
+                                        <span class="fa fa-euro pricingremark2"></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pricingname">Pacote individual (3 horas semanais - 5º ano ao 9º ano)</td>
-                                    <td class="pricingvalue">95,00
-                                        <span class="fa fa-euro pricingremark3"></span>
+                                    <td class="pricingname">Pacote mensal (5º ao 9º ano)
+
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td class="pricingname">Pacote em grupo (3 horas semanais - 5º ano ao 9º ano)
-                                        <span class="pricingremark2"></span>
-                                    </td>
-                                    <td class="pricingvalue">80,00
-                                        <span class="fa fa-euro pricingremark3"></span>
+                                    <td class="pricingvalue">70,00
+                                        <span class="fa fa-euro pricingremark2"></span>
                                     </td>
                                 </tr>
                                 <tfoot>
@@ -405,9 +387,25 @@
                                             <br/>
                                             <span>1 - Preço a pagar por cada hora de explicação.</span>
                                             <br/>
-                                            <span>2 - Grupo no máximo de 4 alunos do mesmo ano.</span>
+                                            <span>2 - Preço a pagar mensalmente por 3 horas semanais.</span>
                                             <br/>
-                                            <span>3 - Preço a pagar mensalmente.</span>
+                                            <span>3 - Apoio escolar consiste em:
+                                                
+                                            </span>
+                                            <lu>
+                                                    <li>Ajuda a fazer trabalhos de casa;</li>
+                                                    <li>Desenvolver métodos de estudo;</li>
+                                                    <li>Estudar para os testes/exames.</li>
+                                            </lu>
+                                            <br/>
+                                            <span>4 - Explicações:
+                                                
+                                            </span>
+                                            <lu>
+                                                    <li>Apenas nas disciplinas de Matemática, Ciências e Biologia;</li>
+                                                    <li>Preço igual ao apoio individual;</li>
+                                                    <li>Se for em grupo, os princípios são iguais ao apoio em grupo.</li>
+                                            </lu>
                                         </td>
                                     </tr>
                                 </tfoot>
@@ -502,7 +500,7 @@
                         <section class="bbox box-style4">
                             <h3>Emails</h3>
                             <p>
-                                <a href="mailto:geral@egna-i.pt">Geral</a>
+                                <a href="mailto:geral@egna-i.pt">geral[AT]egna-i.pt</a>
                             </p>
                         </section>
                     </div>
@@ -510,7 +508,7 @@
             </div>
             <footer class="mainfooter">
                 <ul id="copyright" class="copyright">
-                    <li>Copyright &copy; 2014 Egna-i Ltd. Todos os direitos reservados</li>
+                    <li>Copyright &copy; 2014 - 2015 Egna-i Ltd. Todos os direitos reservados</li>
                     <li>Templates:
                         <a href="http://html5up.net/">HTML5 UP</a>
                     </li>
@@ -519,4 +517,5 @@
         </article>
     </div>
 </body>
+
 </html>

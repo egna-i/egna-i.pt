@@ -175,10 +175,28 @@ jQuery(function () {
      */
     var language = window.navigator.userLanguage || navigator.language;
     var languageGlobal = language;
-    if (language.indexOf("-") >= 0)
-    {
+    if (language.indexOf("-") >= 0) {
         languageGlobal = language.substring(0, language.indexOf("-"));
     }
     $(":visible[lang]:not([lang=" + languageGlobal + "])").attr("style", "display:none");
 
 });
+
+/*
+var egnaApp = angular.module('Egna-iApp' []).controller('EgnaController',
+    function ($scope) {
+        var egna = {};
+        egna.navigation = {};
+        egna.navigation.title = "Egna title";
+        $scope.egna = egna;
+
+    });
+*/
+
+
+
+/*
+angular.module('EgnaApp', []).controller('EgnaController', function($scope) {
+  $scope.a = 1;
+  $scope.b = 2;
+});*/
