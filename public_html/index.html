@@ -13,22 +13,22 @@
     <meta name="viewport" content="initial-scale=1,width=device-width">
     <meta name="google-site-verification" content="O50yIc5qpsqYt1OmQUq29g3sIn94wywGRvTCuEsHWAQ" />
 
-    <link rel="stylesheet" href="css/vendor/normalize.min.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/vendor/normalize.min.css" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+    <link rel="alternate" type="application/rss+xml" title="Egna-i" href="rss/main.xml">
+    <script src="js/vendor/jquery-2.1.0.min.js"></script>
+    <!--<script src="js/angular.min.js"></script>-->
+    <script src="js/config.min.js"></script>
+    <script src="js/skel.min.js"></script>
     <noscript>
         <link rel="stylesheet" href="css/skel-noscript.min.css" />
         <link rel="stylesheet" href="css/style.min.css" />
         <link rel="stylesheet" href="css/style-desktop.min.css" />
     </noscript>
-    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-    <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
-    <link rel="alternate" type="application/rss+xml" title="Egna-i" href="rss/main.xml">
-    <script src="js/vendor/jquery-2.1.0.min.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/config.min.js"></script>
-    <script src="js/skel.min.js"></script>
 </head>
 
 <body>
@@ -71,31 +71,15 @@
                         <img src="img/png/logo.png" alt="logo" />
                     </span>
                 </div>
-                <div class="8u">
+                <div class="8u" itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness">
                     <header>
                         <h1>
-                            <strong>Egna-i</strong>
+                            <strong itemprop="name">Egna-i</strong>
                         </h1>
                     </header>
-                    <div ng-bind="message" style="display:none"> </div>
-                    <p>Venha conhecer o
-                        <a href="#map">
-                            <strong>
-                                <em>nosso espaço na Amadora</em>
-                            </strong>
-                        </a>com serviços para o lar. Pode
-                        <a href="#selfservice">
-                            <strong>
-                                <em>tratar a sua roupa</em>
-                            </strong>
-                        </a>
-                        e ter
-                        <a href="#customservices">
-                            <strong>
-                                    <em>explicações para os seus filhos</em>
-                                </strong>
-                        </a>
-                        .</p>
+                    <p>Venha conhecer o nosso espaço na <span itemprop="location">Amadora</span> com serviços para o lar. 
+                        Pode tratar a sua roupa e ter explicações para os seus filhos.
+                    </p>
                     <a href="#selfservice" class="button">Serviços</a>
                     <a href="#pricing" class="button">Preçário</a>
                     <a href="#map" class="button">Localização</a>
@@ -444,20 +428,20 @@
                 <span>A nossa loja fica na freguesia de Águas Livres na Amadora, perto do nó de Pina Manique.</span>
             </header>
             <div>
-                <div class="row">
+                <div class="row" itemprop="place" itemscope itemtype="http://schema.org/Place">
                     <div class="6u">
-                        <section class="bbox box-style4">
+                        <section class="bbox box-style4" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                             <h3>Endereço</h3>
                             <p>
-                                <span>Praça Helena Vaz da Silva, nº 4A</span>
-                                <span>2610-304 Amadora</span>
+                                <span itemprop="streetAddress">Praça Helena Vaz da Silva, nº 4A</span>
+                                <span itemprop="postalCode">2610-304</span><span itemprop="addressLocality">Amadora</span>
                             </p>
                         </section>
-                        <section class="bbox box-style4">
+                        <section class="bbox box-style4" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
                             <h3>Coordenadas</h3>
                             <p>
-                                <span>N 38°44'30.7"</span>
-                                <span>W 09°12'46.6"</span>
+                                <span itemprop="latitute">N 38°44'30.7"</span>
+                                <span itemprop="longitude">W 09°12'46.6"</span>
                             </p>
                         </section>
                     </div>
@@ -485,8 +469,8 @@
             </header>
             <div>
                 <div class="row">
-                    <div class="4u">
-                        <section class="bbox box-style4">
+                    <div class="4u" itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness">
+                        <section class="bbox box-style4" itemprop="openingHours" datetime="Mon-Sun 08:00-22:00">
                             <h3>Horário</h3>
                             <p>
                                 <span>Serviço Self-service: 08h00 às 22h00 todos os dias</span>
@@ -519,7 +503,8 @@
                         </section>
                     </div>
                 </div>
-            </div>
+            </div>        
+        </article>
             <footer class="mainfooter">
                 <ul id="copyright" class="copyright">
                     <li>Copyright &copy; 2014 - 2015 Egna-i Ltd. Todos os direitos reservados</li>
@@ -528,8 +513,6 @@
                     </li>
                 </ul>
             </footer>
-        </article>
-    </div>
+    </div>    
 </body>
-
 </html>
