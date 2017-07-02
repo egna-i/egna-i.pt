@@ -1,1 +1,2 @@
-/public_html/.ftpsync_settings
+/public_html/.*
+/public_html/cgi-bin/*
