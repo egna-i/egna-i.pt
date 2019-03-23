@@ -13,20 +13,23 @@
     <meta name="viewport" content="initial-scale=1,width=device-width">
     <meta name="google-site-verification" content="O50yIc5qpsqYt1OmQUq29g3sIn94wywGRvTCuEsHWAQ" />
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preload" href="css/vendor/normalize.min.css" />
-    <link rel="preload" href="http://fonts.googleapis.com/css?family=Open+Sans:400" />
+    <link rel="preconnect" href="http://fonts.googleapis.com" />
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400" />
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
     <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
     <link rel="alternate" type="application/rss+xml" title="Egna-i" href="rss/main.xml">
     <script src="js/vendor/jquery-2.1.0.min.js"></script>
     <!--<script src="js/angular.min.js"></script>-->
-    <script src="js/config.min.js"></script>
-    <script src="js/skel.min.js"></script>
+    <script rel="preload" src="js/config.min.js"></script>
+    <script rel="preload" src="js/skel.min.js"></script>
     <noscript>
         <link rel="stylesheet" href="css/skel-noscript.min.css" />
-        <link rel="stylesheet" href="css/style.min.css" />
+        <link rel="preload" href="css/style.min.css" />
         <link rel="stylesheet" href="css/style-desktop.min.css" />
     </noscript>
 </head>
@@ -37,9 +40,6 @@
     <div class="wrapper wrapper-style2 container">
         <nav id="nav">
             <ul class="row">
-                <!--<li class="u">
-                    <a href="#top"><img src="favicon.ico" alt="logo" /></a>
-                </li>-->
                 <li class="2u">
                     <a href="#">Egna</a>
                 </li>
@@ -305,7 +305,7 @@
         </article>
     </div>
 
-    <!-- Contact -->
+    <!-- Footer -->
     <div class="wrapper wrapper-style4 wrapper-last">
         <footer class="mainfooter">
             <ul id="copyright" class="copyright">
@@ -317,5 +317,4 @@
         </footer>
     </div>
 </body>
-
 </html>
