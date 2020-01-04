@@ -24,7 +24,6 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
 
 
     <link rel=preload href="img/png/logo.png" as="image" />
-    <link rel=preload href="img/png/googlemap.png" as="image" />
     
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preload" href="css/vendor/normalize.min.css" />
