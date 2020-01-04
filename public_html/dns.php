@@ -1,6 +1,9 @@
 <?php
 /* use https://api.ipify.org */
-$myfile = fopen("egna.dyndns.org", "w+") or die("Unable to open file!");
-fwrite($myfile, $_GET["ip"]);
-fclose($myfile);
+if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
+    $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    header('HTTP/1.1 301 Moved Permanently');
+    header('Location: ' . $location);
+    exit;
+}
 ?> 

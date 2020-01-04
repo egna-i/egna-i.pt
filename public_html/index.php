@@ -1,3 +1,12 @@
+<?php
+/* use https://api.ipify.org */
+if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
+    $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    header('HTTP/1.1 301 Moved Permanently');
+    header('Location: ' . $location);
+    exit;
+}
+?> 
 <!DOCTYPE html>
 <html>
 
@@ -13,6 +22,10 @@
     <meta name="viewport" content="initial-scale=1,width=device-width">
     <meta name="google-site-verification" content="O50yIc5qpsqYt1OmQUq29g3sIn94wywGRvTCuEsHWAQ" />
 
+
+    <link rel=preload href=”img/png/logo.png" as="image" />
+    <link rel=preload href=”img/png/googlemap.png" as="image" />
+    
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preload" href="css/vendor/normalize.min.css" />
     <link rel="preload" href="http://fonts.googleapis.com/css?family=Open+Sans:400" />
@@ -22,13 +35,23 @@
     <link rel="alternate" type="application/rss+xml" title="Egna-i" href="rss/main.xml">
     <script src="js/vendor/jquery-2.1.0.min.js"></script>
     <!--<script src="js/angular.min.js"></script>-->
-    <script src="js/config.min.js"></script>
-    <script src="js/skel.min.js"></script>
+
+    <!--script src="js/config.min.js"></script-->
+    <script>
+        <?php include "js/config.min.js"; ?>
+    </script>
+
+    <!--script src="js/skel.min.js"></script-->
+    <script>
+        <?php include "js/skel.min.js"; ?>
+    </script>
+
     <noscript>
         <link rel="stylesheet" href="css/skel-noscript.min.css" />
         <link rel="stylesheet" href="css/style.min.css" />
         <link rel="stylesheet" href="css/style-desktop.min.css" />
     </noscript>
+    <link rel="preload" href="css/style.min.css" />
 </head>
 
 <body>
