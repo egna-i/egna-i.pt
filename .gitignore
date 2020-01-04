@@ -1,2 +1,4 @@
 /public_html/.*
 /public_html/cgi-bin/*
+.DS_Store
+.vscode
