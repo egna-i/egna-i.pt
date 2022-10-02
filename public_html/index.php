@@ -258,7 +258,7 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
                             <h3>Mapa</h3>
                             <p>
                                 <span>
-                                    <a href="https://www.google.com/maps?t=m&amp;sll=38.7418544,-9.212935&amp;sspn=0.0064268,0.0109864&amp;q=Pra%C3%A7a+Helena+Vaz+da+Silva+4A&amp;output=classic&amp;dg=ntvo"><img alt="mapa" src="img/png/googlemap.png" /></a>
+                                    <a href="https://www.google.com/maps?t=m&amp;sll=38.7418544,-9.212935&amp;sspn=0.0064268,0.0109864&amp;q=Pra%C3%A7a+Helena+Vaz+da+Silva+4A&amp;output=classic&amp;dg=ntvo"><img alt="mapa" src="img/png/googlemap.png" loading="lazy" /></a>
                                 </span>
                             </p>
                         </section>
