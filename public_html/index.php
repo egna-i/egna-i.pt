@@ -27,23 +27,13 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
     
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preload" href="css/vendor/normalize.min.css" />
+    <link rel="prefetch" href="http://fonts.googleapis.com/css?family=Open+Sans:400" />
     <link rel="preload" href="http://fonts.googleapis.com/css?family=Open+Sans:400" />
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
     <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
     <link rel="alternate" type="application/rss+xml" title="Egna-i" href="rss/main.xml">
-    <script src="js/vendor/jquery-2.1.0.min.js"></script>
-    <!--<script src="js/angular.min.js"></script>-->
-
-    <!--script src="js/config.min.js"></script-->
-    <script>
-        <?php include "js/config.min.js"; ?>
-    </script>
-
-    <!--script src="js/skel.min.js"></script-->
-    <script>
-        <?php include "js/skel.min.js"; ?>
-    </script>
+    <link rel="prefetch" src="https://code.jquery.com/jquery-3.6.1.min.js" />
 
     <noscript>
         <link rel="stylesheet" href="css/skel-noscript.min.css" />
@@ -338,6 +328,19 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
             </ul>
         </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!--<script src="js/angular.min.js"></script>-->
+
+    <!-- <script src="js/config.min.js" async></script> -->
+    <script>
+        <?php include "js/config.min.js"; ?>
+    </script>
+
+    // <script src="js/skel.min.js" async></script>
+    <script>
+        <?php include "js/skel.min.js"; ?>
+    </script>
 </body>
 
 </html>
