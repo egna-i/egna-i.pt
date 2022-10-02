@@ -196,19 +196,19 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
                                 </tr>
                                 <tr>
                                     <td class="pricingname">Lavagem 16Kg (máquina grande)</td>
-                                    <td class="pricingvalue">6,50
+                                    <td class="pricingvalue">7,50
                                         <span class="fa fa-euro"></span>
                                     </td>
-                                    <td class="pricingvalue">6,00
+                                    <td class="pricingvalue">7,00
                                         <span class="fa fa-euro pricingremark1"></span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="pricingname">Secagem</td>
-                                    <td class="pricingvalue">1,80
+                                    <td class="pricingvalue">2,00
                                         <span class="fa fa-euro"></span>
                                     </td>
-                                    <td class="pricingvalue">1,50
+                                    <td class="pricingvalue">1,80
                                         <span class="fa fa-euro pricingremark1"></span>
                                     </td>
                                 </tr>
@@ -319,7 +319,7 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
                                 <a href="mailto:geral@egna-i.pt">geral[AT]egna-i.pt</a>
                             </p>
                             <h3>Telefones</h3>
-                            <p>+351 915 043 028</p>
+                            <p>+351 91 504 30 28</p>
                         </section>
                     </div>
                 </div>
@@ -331,7 +331,7 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
     <div class="wrapper wrapper-style4 wrapper-last">
         <footer class="mainfooter">
             <ul id="copyright" class="copyright">
-                <li>Copyright &copy; 2014 - 2020 Egna-i Ltd. Todos os direitos reservados</li>
+                <li>Copyright &copy; 2014 - 2022 Egna-i Ltd. Todos os direitos reservados</li>
                 <li>Templates:
                     <a href="http://html5up.net/">HTML5 UP</a>
                 </li>
